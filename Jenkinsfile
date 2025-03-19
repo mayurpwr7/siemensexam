@@ -25,7 +25,7 @@ pipeline {
         stage('Invoke Lambda') {
             steps {
                 script {
-                    sh 'aws lambda invoke --function-name invoke_api_lambda output.json --log-type Tail'
+                    sh 'aws lambda invoke --function-name invoke_api_lambda1 output.json --log-type Tail'
                 }
             }
         }
