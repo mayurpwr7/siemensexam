@@ -16,7 +16,7 @@ resource "aws_lambda_function" "invoke_api_lambda1" {
 
   environment {
     variables = {
-      API_ENDPOINT = "https://bc1yy8dzsg.execute-api.eu-west-1.amazonaws.com/v1/data"
+      API_ENDPOINT = "https://bc1yy8dzsg.execute-api.ap-south-1.amazonaws.com/v1/data"
       API_AUTH_KEY = "test"
     }
   }
