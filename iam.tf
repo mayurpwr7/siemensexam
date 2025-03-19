@@ -1,6 +1,6 @@
 # IAM Role for Lambda to assume
-resource "aws_iam_role1" "lambda_role1" {
-  name               = "lambda_role1"
+resource "aws_iam_role" "lambda_role" {
+  name               = "lambda_role"
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
     Statement = [
