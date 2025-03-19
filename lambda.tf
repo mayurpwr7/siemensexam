@@ -5,7 +5,7 @@ resource "aws_lambda_function" "invoke_api_lambda" {
   s3_key    = "<YourLambdaCodeLocation>.zip"  # You will need to upload your Lambda function code in a ZIP file to S3.
 
   handler = "lambda_function.lambda_handler"
-  runtime = "python3.8"
+  runtime = "python3.11"
 
   role = aws_iam_role.lambda_role.arn
 
