@@ -1,5 +1,5 @@
-resource "aws_lambda_function" "invoke_api_lambda" {
-  function_name = "invoke_api_lambda"
+resource "aws_lambda_function" "invoke_api_lambda1" {
+  function_name = "invoke_api_lambda1"
 
   s3_bucket = "467.devops.candidate.exam"
   s3_key    = "<YourLambdaCodeLocation>.zip"  # You will need to upload your Lambda function code in a ZIP file to S3.
